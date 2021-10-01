@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="SITE_KEY" prompt="SITE_KEY?" promptNeeded="false" type="id_String" value="Guest"/>
+    <contextParameter comment="" name="CONTENT_STRUCTURE_ID" prompt="CONTENT_STRUCTURE_ID?" promptNeeded="false" type="id_Long" value="39432"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:V/6vx4BLp/bVD/e2dgr0J+lfj/+N9ICazxa5YeK0" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/Applications/TOSDI-7.3.1/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:t0wKCs9vhx3AZuoqfkE4pQQU5aIVCbC1Clmg31rE" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_fturgAynEeydPZHUbvmr6A" name="DataOperation"/>
+    <routinesParameter id="_ft5DkAynEeydPZHUbvmr6A" name="Mathematical"/>
+    <routinesParameter id="_ftpL8AynEeydPZHUbvmr6A" name="Numeric"/>
+    <routinesParameter id="_ft0LEAynEeydPZHUbvmr6A" name="Relational"/>
+    <routinesParameter id="_ft2nUAynEeydPZHUbvmr6A" name="StringHandling"/>
+    <routinesParameter id="_ftL48AynEeydPZHUbvmr6A" name="TalendDataGenerator"/>
+    <routinesParameter id="_ftxHwAynEeydPZHUbvmr6A" name="TalendDate"/>
+    <routinesParameter id="_fts2UAynEeydPZHUbvmr6A" name="TalendStringUtil"/>
+    <routinesParameter id="_ftrBIAynEeydPZHUbvmr6A" name="TalendString"/>
+    <routinesParameter id="_A5nq0Ay3EeypMcEVqOaHMQ" name="LiferayUtils"/>
+  </parameters>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;liferay-vision.cupaekvmnvjp.eu-west-3.rds.amazonaws.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;liferay_vision&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:q5CnzkjqfHyU/u9RDkRwxW5051ryFu6eyhafyP3SQnqfl7owX2+t3n9QjOI="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;blogs&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from blogs&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="author"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="publicationDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" defaultValue="" key="false" length="11" name="id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="title" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="715827882" name="body" nullable="true" pattern="" precision="0" sourceType="LONGTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="author" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="publicationDate" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_7y-D4B-rEeyM4scuErMjnQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="structuredContentFormat">
+      <column comment="complex: Dictionary" key="false" length="-1" name="actions" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="actions"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_bestRating" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_bestRating"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_ratingAverage" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_ratingAverage"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_ratingCount" nullable="true" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_ratingCount"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_ratingValue" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_ratingValue"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_worstRating" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_worstRating"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_x_class_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_x_class_name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="assetLibraryKey" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="assetLibraryKey"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="availableLanguages" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="availableLanguages"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="contentFields" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="contentFields"/>
+      </column>
+      <column comment="" key="false" length="-1" name="contentStructureId" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="contentStructureId"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_additionalName" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_additionalName"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_contentType" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_contentType"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_familyName" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_familyName"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_givenName" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_givenName"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_id" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_image" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_image"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_profileURL" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_profileURL"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_x_class_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_x_class_name"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="customFields" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="customFields"/>
+      </column>
+      <column comment="" key="false" length="-1" name="dateCreated" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss'Z'&quot;" precision="-1" type="id_Date" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="dateCreated"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="dateModified" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss'Z'&quot;" precision="-1" type="id_Date" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="dateModified"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="datePublished" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss'Z'&quot;" precision="-1" type="id_Date" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="datePublished"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="description" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="description"/>
+      </column>
+      <column comment="complex: Dictionary" key="false" length="-1" name="description_i18n" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="description_i18n"/>
+      </column>
+      <column comment="" key="false" length="-1" name="externalReferenceCode" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="externalReferenceCode"/>
+      </column>
+      <column comment="" key="false" length="-1" name="friendlyUrlPath" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="friendlyUrlPath"/>
+      </column>
+      <column comment="complex: Dictionary" key="false" length="-1" name="friendlyUrlPath_i18n" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="friendlyUrlPath_i18n"/>
+      </column>
+      <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="key" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="key"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="keywords" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="keywords"/>
+      </column>
+      <column comment="" key="false" length="-1" name="numberOfComments" nullable="true" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="numberOfComments"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="relatedContents" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="relatedContents"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="renderedContents" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="renderedContents"/>
+      </column>
+      <column comment="" key="false" length="-1" name="siteId" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="siteId"/>
+      </column>
+      <column comment="" key="false" length="-1" name="subscribed" nullable="true" pattern="" precision="-1" type="id_Boolean" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="subscribed"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="taxonomyCategoryBriefs" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="taxonomyCategoryBriefs"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="taxonomyCategoryIds" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="taxonomyCategoryIds"/>
+      </column>
+      <column comment="" key="false" length="-1" name="title" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="title"/>
+      </column>
+      <column comment="complex: Dictionary" key="false" length="-1" name="title_i18n" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="title_i18n"/>
+      </column>
+      <column comment="" key="false" length="-1" name="uuid" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="uuid"/>
+      </column>
+      <column comment="" key="false" length="-1" name="viewableBy" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="viewableBy"/>
+      </column>
+      <column comment="" key="false" length="-1" name="x_class_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="x_class_name"/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="structuredContentFormat">
+        <mapperTableEntries name="actions" type="id_String" nullable="true"/>
+        <mapperTableEntries name="aggregateRating_bestRating" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="aggregateRating_ratingAverage" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="aggregateRating_ratingCount" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="aggregateRating_ratingValue" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="aggregateRating_worstRating" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="aggregateRating_x_class_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="assetLibraryKey" type="id_String" nullable="true"/>
+        <mapperTableEntries name="availableLanguages" type="id_String" nullable="true"/>
+        <mapperTableEntries name="contentFields" expression="LiferayUtils.setArticleFields(row1.title,row1.body,row1.author,row1.publicationDate) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="contentStructureId" expression="context.CONTENT_STRUCTURE_ID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="creator_additionalName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="creator_contentType" type="id_String" nullable="true"/>
+        <mapperTableEntries name="creator_familyName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="creator_givenName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="creator_id" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="creator_image" type="id_String" nullable="true"/>
+        <mapperTableEntries name="creator_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="creator_profileURL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="creator_x_class_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="customFields" type="id_String" nullable="true"/>
+        <mapperTableEntries name="dateCreated" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="dateModified" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="datePublished" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="description_i18n" type="id_String" nullable="true"/>
+        <mapperTableEntries name="externalReferenceCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="friendlyUrlPath" type="id_String" nullable="true"/>
+        <mapperTableEntries name="friendlyUrlPath_i18n" type="id_String" nullable="true"/>
+        <mapperTableEntries name="id" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="key" type="id_String" nullable="true"/>
+        <mapperTableEntries name="keywords" type="id_String" nullable="true"/>
+        <mapperTableEntries name="numberOfComments" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="relatedContents" type="id_String" nullable="true"/>
+        <mapperTableEntries name="renderedContents" type="id_String" nullable="true"/>
+        <mapperTableEntries name="siteId" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="subscribed" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="taxonomyCategoryBriefs" type="id_String" nullable="true"/>
+        <mapperTableEntries name="taxonomyCategoryIds" type="id_String" nullable="true"/>
+        <mapperTableEntries name="title" expression="row1.title" type="id_String" nullable="true"/>
+        <mapperTableEntries name="title_i18n" type="id_String" nullable="true"/>
+        <mapperTableEntries name="uuid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="viewableBy" type="id_String" nullable="true"/>
+        <mapperTableEntries name="x_class_name" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="id" type="id_Integer"/>
+        <mapperTableEntries name="title" type="id_String"/>
+        <mapperTableEntries name="body" type="id_String" nullable="true"/>
+        <mapperTableEntries name="author" type="id_String" nullable="true"/>
+        <mapperTableEntries name="publicationDate" type="id_Date" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLiferayOutput" componentVersion="0.6.1.SNAPSHOT" offsetLabelX="0" offsetLabelY="0" posX="640" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLiferayOutput_1" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter name="PROPERTIES" value="{&quot;@type&quot;:&quot;com.liferay.talend.tliferayoutput.TLiferayOutputProperties&quot;,&quot;dieOnError&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:true},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;dieOnError&quot;,&quot;tags&quot;:null},&quot;resource&quot;:{&quot;@id&quot;:2,&quot;connection&quot;:{&quot;@id&quot;:8,&quot;advanced&quot;:{&quot;formtoShow&quot;:{&quot;subtitle&quot;:null,&quot;properties&quot;:{&quot;@ref&quot;:8},&quot;widgetMap&quot;:{&quot;connectTimeout&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.presentation.Widget&quot;,&quot;row&quot;:1,&quot;order&quot;:1,&quot;hidden&quot;:false,&quot;widgetType&quot;:&quot;widget.type.default&quot;,&quot;longRunning&quot;:false,&quot;deemphasize&quot;:false,&quot;callBeforeActivate&quot;:false,&quot;callBeforePresent&quot;:false,&quot;callValidate&quot;:false,&quot;callAfter&quot;:false,&quot;content&quot;:{&quot;@id&quot;:7,&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;60&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Integer&quot;,&quot;name&quot;:&quot;connectTimeout&quot;,&quot;tags&quot;:null},&quot;configurationValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;}},&quot;readTimeout&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.presentation.Widget&quot;,&quot;row&quot;:2,&quot;order&quot;:1,&quot;hidden&quot;:false,&quot;widgetType&quot;:&quot;widget.type.default&quot;,&quot;longRunning&quot;:false,&quot;deemphasize&quot;:false,&quot;callBeforeActivate&quot;:false,&quot;callBeforePresent&quot;:false,&quot;callValidate&quot;:false,&quot;callAfter&quot;:false,&quot;content&quot;:{&quot;@id&quot;:6,&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;100&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Integer&quot;,&quot;name&quot;:&quot;readTimeout&quot;,&quot;tags&quot;:null},&quot;configurationValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;}},&quot;itemsPerPage&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.presentation.Widget&quot;,&quot;row&quot;:3,&quot;order&quot;:1,&quot;hidden&quot;:false,&quot;widgetType&quot;:&quot;widget.type.default&quot;,&quot;longRunning&quot;:false,&quot;deemphasize&quot;:false,&quot;callBeforeActivate&quot;:false,&quot;callBeforePresent&quot;:false,&quot;callValidate&quot;:false,&quot;callAfter&quot;:false,&quot;content&quot;:{&quot;@id&quot;:5,&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;100&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Integer&quot;,&quot;name&quot;:&quot;itemsPerPage&quot;,&quot;tags&quot;:null},&quot;configurationValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;}},&quot;followRedirects&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.presentation.Widget&quot;,&quot;row&quot;:4,&quot;order&quot;:1,&quot;hidden&quot;:false,&quot;widgetType&quot;:&quot;widget.type.default&quot;,&quot;longRunning&quot;:false,&quot;deemphasize&quot;:false,&quot;callBeforeActivate&quot;:false,&quot;callBeforePresent&quot;:false,&quot;callValidate&quot;:false,&quot;callAfter&quot;:false,&quot;content&quot;:{&quot;@id&quot;:4,&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:true},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;followRedirects&quot;,&quot;tags&quot;:null},&quot;configurationValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;}},&quot;forceHttps&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.presentation.Widget&quot;,&quot;row&quot;:5,&quot;order&quot;:1,&quot;hidden&quot;:false,&quot;widgetType&quot;:&quot;widget.type.default&quot;,&quot;longRunning&quot;:false,&quot;deemphasize&quot;:false,&quot;callBeforeActivate&quot;:false,&quot;callBeforePresent&quot;:false,&quot;callValidate&quot;:false,&quot;callAfter&quot;:false,&quot;content&quot;:{&quot;@id&quot;:3,&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;forceHttps&quot;,&quot;tags&quot;:null},&quot;configurationValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;}}},&quot;cancelable&quot;:false,&quot;originalValues&quot;:null,&quot;callBeforeFormPresent&quot;:false,&quot;callAfterFormBack&quot;:false,&quot;callAfterFormNext&quot;:false,&quot;callAfterFormFinish&quot;:false,&quot;allowBack&quot;:false,&quot;allowForward&quot;:false,&quot;allowFinish&quot;:false,&quot;refreshUI&quot;:true,&quot;name&quot;:&quot;Advanced&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;advanced&quot;,&quot;tags&quot;:null},&quot;basicAuthorizationProperties&quot;:{&quot;password&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;enc:system.encryption.key.v1:sgeKrapSWMucYrydbcmn5Jn55L5GyWNjHbbp25tUliW6Fw==&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;password&quot;,&quot;tags&quot;:null},&quot;userId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;test@liferay.com\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;userId&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;basicAuthorizationProperties&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;connectTimeout&quot;:{&quot;@ref&quot;:7},&quot;followRedirects&quot;:{&quot;@ref&quot;:4},&quot;forceHttps&quot;:{&quot;@ref&quot;:3},&quot;hostURL&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;http://localhost:8080\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;hostURL&quot;,&quot;tags&quot;:null},&quot;itemsPerPage&quot;:{&quot;@ref&quot;:5},&quot;loginType&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;com.liferay.talend.properties.connection.LiferayConnectionProperties$LoginType&quot;,&quot;_description&quot;:&quot;Basic Authentication&quot;,&quot;name&quot;:&quot;BASIC&quot;},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.Arrays$ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;com.liferay.talend.properties.connection.LiferayConnectionProperties$LoginType&quot;,&quot;_description&quot;:&quot;Basic Authentication&quot;,&quot;name&quot;:&quot;BASIC&quot;},{&quot;@type&quot;:&quot;com.liferay.talend.properties.connection.LiferayConnectionProperties$LoginType&quot;,&quot;_description&quot;:&quot;OAuth2 Authorization&quot;,&quot;name&quot;:&quot;OAUTH2&quot;}]},&quot;currentType&quot;:&quot;com.liferay.talend.properties.connection.LiferayConnectionProperties.LoginType&quot;,&quot;name&quot;:&quot;loginType&quot;,&quot;tags&quot;:null},&quot;name&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;name&quot;,&quot;tags&quot;:null},&quot;readTimeout&quot;:{&quot;@ref&quot;:6},&quot;referencedComponent&quot;:{&quot;referenceType&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.Arrays$ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;THIS_COMPONENT&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_TYPE&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_INSTANCE&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties&lt;P extends org.talend.daikon.properties.Properties>.ReferenceType&quot;,&quot;name&quot;:&quot;referenceType&quot;,&quot;tags&quot;:null},&quot;componentInstanceId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;componentInstanceId&quot;,&quot;tags&quot;:null},&quot;referenceDefinitionName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;tLiferayConnection&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;referenceDefinitionName&quot;,&quot;tags&quot;:null},&quot;reference&quot;:null,&quot;name&quot;:&quot;referencedComponent&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;testConnection&quot;:{&quot;formtoShow&quot;:null,&quot;name&quot;:&quot;testConnection&quot;,&quot;tags&quot;:null},&quot;org.talend.daikon.properties.PropertiesImpl.name&quot;:&quot;connection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;endpoint&quot;:{&quot;possibleValues2&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/structured-contents/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/knowledge-base-articles/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-threads/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-nodes/{wikiNodeId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/blog-postings/{blogPostingId}/my-rating&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/navigation-menus/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/documents/{documentId}/comments&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/asset-libraries/{assetLibraryId}/documents&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-articles/{parentKnowledgeBaseArticleId}/knowledge-base-articles&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/structured-contents&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-nodes/{wikiNodeId}/unsubscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/blog-postings&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/document-folders/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-page-attachments/{wikiPageAttachmentId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/asset-libraries/{assetLibraryId}/document-folders/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-threads/{messageBoardThreadId}/message-board-messages&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/knowledge-base-folders/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-folders/{parentKnowledgeBaseFolderId}/knowledge-base-folders&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-content-folders/{structuredContentFolderId}/unsubscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-content-folders/{parentStructuredContentFolderId}/structured-content-folders&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-articles/{knowledgeBaseArticleId}/unsubscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-threads/{messageBoardThreadId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/blog-postings/{blogPostingId}/comments&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/document-folders/{documentFolderId}/documents/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-contents/{structuredContentId}/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/knowledge-base-articles/unsubscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-content-folders/{structuredContentFolderId}/structured-contents&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/asset-libraries/{assetLibraryId}/structured-contents&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/navigation-menus/{navigationMenuId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-messages/{parentMessageBoardMessageId}/message-board-messages&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-articles/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/knowledge-base-articles/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/comments/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-folders/{knowledgeBaseFolderId}/knowledge-base-articles/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/document-folders/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/knowledge-base-articles/subscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-articles/{knowledgeBaseArticleId}/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-sections/{messageBoardSectionId}/message-board-threads&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-contents/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-threads/{messageBoardThreadId}/message-board-messages/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/message-board-threads/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-content-folders/{structuredContentFolderId}/structured-contents/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/structured-contents/by-external-reference-code/{externalReferenceCode}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/content-structures/{contentStructureId}/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/wiki-nodes&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-threads/{messageBoardThreadId}/message-board-attachments&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/blog-postings/{blogPostingId}/comments/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/knowledge-base-articles&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/message-board-sections&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/wiki-pages/by-external-reference-code/{externalReferenceCode}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-messages/{messageBoardMessageId}/my-rating&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-sections/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/document-folders&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-attachments/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/message-board-messages/by-external-reference-code/{externalReferenceCode}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-contents/{structuredContentId}/unsubscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-content-folder/{structuredContentFolderId}/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-folders/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/comments/{parentCommentId}/comments&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-contents/{structuredContentId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-content-folders/{structuredContentFolderId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/asset-libraries/{assetLibraryId}/structured-content-folders/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/blog-postings/{blogPostingId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-sections/{messageBoardSectionId}/unsubscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-nodes/{wikiNodeId}/wiki-pages/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-threads/{messageBoardThreadId}/subscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-content-folders/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/wiki-nodes/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/asset-libraries/{assetLibraryId}/structured-content-folders/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-pages/{wikiPageId}/wiki-page-attachments/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-nodes/{wikiNodeId}/wiki-pages&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-page-attachments/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/documents/{documentId}/my-rating&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-messages/{messageBoardMessageId}/message-board-attachments/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-nodes/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-attachments/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/blog-postings/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-messages/{messageBoardMessageId}/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-pages/{parentWikiPageId}/wiki-pages&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-folders/{knowledgeBaseFolderId}/knowledge-base-articles&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-pages/{wikiPageId}/unsubscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-threads/{messageBoardThreadId}/unsubscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/documents/{documentId}/comments/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/document-folders/{documentFolderId}/unsubscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/documents/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/message-board-messages/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/documents/{documentId}/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/blog-postings/{blogPostingId}/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/asset-libraries/{assetLibraryId}/structured-content-folders&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/document-folders/{documentFolderId}/documents&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-threads/{messageBoardThreadId}/my-rating&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-pages/{wikiPageId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-articles/{knowledgeBaseArticleId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/document-folders/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/structured-content-folders/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/blog-posting-images/{blogPostingImageId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/documents/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/documents/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/documents/by-external-reference-code/{externalReferenceCode}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/wiki-nodes/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/asset-libraries/{assetLibraryId}/structured-contents/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/asset-libraries/{assetLibraryId}/documents/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/asset-libraries/{assetLibraryId}/document-folders/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-content-folders/{structuredContentFolderId}/subscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-articles/{knowledgeBaseArticleId}/subscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/blog-posting-images/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/navigation-menus/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-articles/{knowledgeBaseArticleId}/knowledge-base-attachments&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/document-folders/{documentFolderId}/subscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/documents/{documentId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-contents/{structuredContentId}/subscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-folders/{knowledgeBaseFolderId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/navigation-menus/{navigationMenuId}/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-messages/{messageBoardMessageId}/subscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-folders/{knowledgeBaseFolderId}/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-contents/{structuredContentId}/comments/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-sections/{messageBoardSectionId}/message-board-threads/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-threads/{messageBoardThreadId}/message-board-attachments/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-messages/{messageBoardMessageId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/blog-posting-images&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/documents&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/knowledge-base-articles/by-external-reference-code/{externalReferenceCode}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-messages/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/message-board-sections/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/knowledge-base-folders/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/document-folders/{documentFolderId}/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/blog-postings/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/message-board-threads/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/asset-libraries/{assetLibraryId}/content-structures/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/knowledge-base-folders&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/knowledge-base-folders/by-external-reference-code/{externalReferenceCode}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-contents/{structuredContentId}/my-rating&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/asset-libraries/{assetLibraryId}/document-folders&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-sections/{messageBoardSectionId}/subscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/asset-libraries/{assetLibraryId}/documents/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-sections/{messageBoardSectionId}/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/blog-postings/unsubscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/structured-content-folders/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-attachments/{messageBoardAttachmentId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-nodes/{wikiNodeId}/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-pages/{wikiPageId}/subscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/asset-libraries/{assetLibraryId}/structured-contents/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-pages/{wikiPageId}/wiki-page-attachments&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/structured-contents/{structuredContentId}/comments&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/document-folders/{documentFolderId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-articles/{knowledgeBaseArticleId}/my-rating&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-pages/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-nodes/{wikiNodeId}/subscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/structured-contents/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/wiki-nodes/by-external-reference-code/{externalReferenceCode}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/message-board-threads&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-messages/{messageBoardMessageId}/message-board-attachments&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/navigation-menus&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/blog-postings/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-articles/{knowledgeBaseArticleId}/knowledge-base-attachments/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/structured-content-folders&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-sections/{messageBoardSectionId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/navigation-menus/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/message-board-sections/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/comments/{commentId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-messages/{messageBoardMessageId}/unsubscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/content-structures/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-sections/{parentMessageBoardSectionId}/message-board-sections&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/blog-posting-images/batch&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/sites/{siteId}/blog-postings/subscribe&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/document-folders/{parentDocumentFolderId}/document-folders&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/knowledge-base-attachments/{knowledgeBaseAttachmentId}&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/message-board-threads/{messageBoardThreadId}/permissions&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;/wiki-pages/{wikiPageId}/permissions&quot;,&quot;tags&quot;:null}]},&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;/sites/{siteId}/structured-contents\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;/sites/{siteId}/structured-contents/permissions&quot;,&quot;/sites/{siteId}/knowledge-base-articles/batch&quot;,&quot;/message-board-threads/batch&quot;,&quot;/wiki-nodes/{wikiNodeId}&quot;,&quot;/blog-postings/{blogPostingId}/my-rating&quot;,&quot;/sites/{siteId}/navigation-menus/batch&quot;,&quot;/documents/{documentId}/comments&quot;,&quot;/asset-libraries/{assetLibraryId}/documents&quot;,&quot;/knowledge-base-articles/{parentKnowledgeBaseArticleId}/knowledge-base-articles&quot;,&quot;/sites/{siteId}/structured-contents&quot;,&quot;/wiki-nodes/{wikiNodeId}/unsubscribe&quot;,&quot;/sites/{siteId}/blog-postings&quot;,&quot;/document-folders/batch&quot;,&quot;/wiki-page-attachments/{wikiPageAttachmentId}&quot;,&quot;/asset-libraries/{assetLibraryId}/document-folders/batch&quot;,&quot;/message-board-threads/{messageBoardThreadId}/message-board-messages&quot;,&quot;/sites/{siteId}/knowledge-base-folders/batch&quot;,&quot;/knowledge-base-folders/{parentKnowledgeBaseFolderId}/knowledge-base-folders&quot;,&quot;/structured-content-folders/{structuredContentFolderId}/unsubscribe&quot;,&quot;/structured-content-folders/{parentStructuredContentFolderId}/structured-content-folders&quot;,&quot;/knowledge-base-articles/{knowledgeBaseArticleId}/unsubscribe&quot;,&quot;/message-board-threads/{messageBoardThreadId}&quot;,&quot;/blog-postings/{blogPostingId}/comments&quot;,&quot;/document-folders/{documentFolderId}/documents/batch&quot;,&quot;/structured-contents/{structuredContentId}/permissions&quot;,&quot;/sites/{siteId}/knowledge-base-articles/unsubscribe&quot;,&quot;/structured-content-folders/{structuredContentFolderId}/structured-contents&quot;,&quot;/asset-libraries/{assetLibraryId}/structured-contents&quot;,&quot;/navigation-menus/{navigationMenuId}&quot;,&quot;/message-board-messages/{parentMessageBoardMessageId}/message-board-messages&quot;,&quot;/knowledge-base-articles/batch&quot;,&quot;/sites/{siteId}/knowledge-base-articles/permissions&quot;,&quot;/comments/batch&quot;,&quot;/knowledge-base-folders/{knowledgeBaseFolderId}/knowledge-base-articles/batch&quot;,&quot;/sites/{siteId}/document-folders/permissions&quot;,&quot;/sites/{siteId}/knowledge-base-articles/subscribe&quot;,&quot;/knowledge-base-articles/{knowledgeBaseArticleId}/permissions&quot;,&quot;/message-board-sections/{messageBoardSectionId}/message-board-threads&quot;,&quot;/structured-contents/batch&quot;,&quot;/message-board-threads/{messageBoardThreadId}/message-board-messages/batch&quot;,&quot;/sites/{siteId}/message-board-threads/permissions&quot;,&quot;/structured-content-folders/{structuredContentFolderId}/structured-contents/batch&quot;,&quot;/sites/{siteId}/structured-contents/by-external-reference-code/{externalReferenceCode}&quot;,&quot;/content-structures/{contentStructureId}/permissions&quot;,&quot;/sites/{siteId}/wiki-nodes&quot;,&quot;/message-board-threads/{messageBoardThreadId}/message-board-attachments&quot;,&quot;/blog-postings/{blogPostingId}/comments/batch&quot;,&quot;/sites/{siteId}/knowledge-base-articles&quot;,&quot;/sites/{siteId}/message-board-sections&quot;,&quot;/sites/{siteId}/wiki-pages/by-external-reference-code/{externalReferenceCode}&quot;,&quot;/message-board-messages/{messageBoardMessageId}/my-rating&quot;,&quot;/message-board-sections/batch&quot;,&quot;/sites/{siteId}/document-folders&quot;,&quot;/message-board-attachments/batch&quot;,&quot;/sites/{siteId}/message-board-messages/by-external-reference-code/{externalReferenceCode}&quot;,&quot;/structured-contents/{structuredContentId}/unsubscribe&quot;,&quot;/structured-content-folder/{structuredContentFolderId}/permissions&quot;,&quot;/knowledge-base-folders/batch&quot;,&quot;/comments/{parentCommentId}/comments&quot;,&quot;/structured-contents/{structuredContentId}&quot;,&quot;/structured-content-folders/{structuredContentFolderId}&quot;,&quot;/asset-libraries/{assetLibraryId}/structured-content-folders/permissions&quot;,&quot;/blog-postings/{blogPostingId}&quot;,&quot;/message-board-sections/{messageBoardSectionId}/unsubscribe&quot;,&quot;/wiki-nodes/{wikiNodeId}/wiki-pages/batch&quot;,&quot;/message-board-threads/{messageBoardThreadId}/subscribe&quot;,&quot;/structured-content-folders/batch&quot;,&quot;/sites/{siteId}/wiki-nodes/permissions&quot;,&quot;/asset-libraries/{assetLibraryId}/structured-content-folders/batch&quot;,&quot;/wiki-pages/{wikiPageId}/wiki-page-attachments/batch&quot;,&quot;/wiki-nodes/{wikiNodeId}/wiki-pages&quot;,&quot;/wiki-page-attachments/batch&quot;,&quot;/documents/{documentId}/my-rating&quot;,&quot;/message-board-messages/{messageBoardMessageId}/message-board-attachments/batch&quot;,&quot;/wiki-nodes/batch&quot;,&quot;/knowledge-base-attachments/batch&quot;,&quot;/sites/{siteId}/blog-postings/permissions&quot;,&quot;/message-board-messages/{messageBoardMessageId}/permissions&quot;,&quot;/wiki-pages/{parentWikiPageId}/wiki-pages&quot;,&quot;/knowledge-base-folders/{knowledgeBaseFolderId}/knowledge-base-articles&quot;,&quot;/wiki-pages/{wikiPageId}/unsubscribe&quot;,&quot;/message-board-threads/{messageBoardThreadId}/unsubscribe&quot;,&quot;/documents/{documentId}/comments/batch&quot;,&quot;/document-folders/{documentFolderId}/unsubscribe&quot;,&quot;/sites/{siteId}/documents/permissions&quot;,&quot;/sites/{siteId}/message-board-messages/permissions&quot;,&quot;/documents/{documentId}/permissions&quot;,&quot;/blog-postings/{blogPostingId}/permissions&quot;,&quot;/asset-libraries/{assetLibraryId}/structured-content-folders&quot;,&quot;/document-folders/{documentFolderId}/documents&quot;,&quot;/message-board-threads/{messageBoardThreadId}/my-rating&quot;,&quot;/wiki-pages/{wikiPageId}&quot;,&quot;/knowledge-base-articles/{knowledgeBaseArticleId}&quot;,&quot;/sites/{siteId}/document-folders/batch&quot;,&quot;/sites/{siteId}/structured-content-folders/permissions&quot;,&quot;/blog-posting-images/{blogPostingImageId}&quot;,&quot;/documents/batch&quot;,&quot;/sites/{siteId}/documents/batch&quot;,&quot;/sites/{siteId}/documents/by-external-reference-code/{externalReferenceCode}&quot;,&quot;/sites/{siteId}/wiki-nodes/batch&quot;,&quot;/asset-libraries/{assetLibraryId}/structured-contents/permissions&quot;,&quot;/asset-libraries/{assetLibraryId}/documents/batch&quot;,&quot;/asset-libraries/{assetLibraryId}/document-folders/permissions&quot;,&quot;/structured-content-folders/{structuredContentFolderId}/subscribe&quot;,&quot;/knowledge-base-articles/{knowledgeBaseArticleId}/subscribe&quot;,&quot;/sites/{siteId}/blog-posting-images/batch&quot;,&quot;/navigation-menus/batch&quot;,&quot;/knowledge-base-articles/{knowledgeBaseArticleId}/knowledge-base-attachments&quot;,&quot;/document-folders/{documentFolderId}/subscribe&quot;,&quot;/documents/{documentId}&quot;,&quot;/structured-contents/{structuredContentId}/subscribe&quot;,&quot;/knowledge-base-folders/{knowledgeBaseFolderId}&quot;,&quot;/navigation-menus/{navigationMenuId}/permissions&quot;,&quot;/message-board-messages/{messageBoardMessageId}/subscribe&quot;,&quot;/knowledge-base-folders/{knowledgeBaseFolderId}/permissions&quot;,&quot;/structured-contents/{structuredContentId}/comments/batch&quot;,&quot;/message-board-sections/{messageBoardSectionId}/message-board-threads/batch&quot;,&quot;/message-board-threads/{messageBoardThreadId}/message-board-attachments/batch&quot;,&quot;/message-board-messages/{messageBoardMessageId}&quot;,&quot;/sites/{siteId}/blog-posting-images&quot;,&quot;/sites/{siteId}/documents&quot;,&quot;/sites/{siteId}/knowledge-base-articles/by-external-reference-code/{externalReferenceCode}&quot;,&quot;/message-board-messages/batch&quot;,&quot;/sites/{siteId}/message-board-sections/batch&quot;,&quot;/sites/{siteId}/knowledge-base-folders/permissions&quot;,&quot;/document-folders/{documentFolderId}/permissions&quot;,&quot;/sites/{siteId}/blog-postings/batch&quot;,&quot;/sites/{siteId}/message-board-threads/batch&quot;,&quot;/asset-libraries/{assetLibraryId}/content-structures/permissions&quot;,&quot;/sites/{siteId}/knowledge-base-folders&quot;,&quot;/sites/{siteId}/knowledge-base-folders/by-external-reference-code/{externalReferenceCode}&quot;,&quot;/structured-contents/{structuredContentId}/my-rating&quot;,&quot;/asset-libraries/{assetLibraryId}/document-folders&quot;,&quot;/message-board-sections/{messageBoardSectionId}/subscribe&quot;,&quot;/asset-libraries/{assetLibraryId}/documents/permissions&quot;,&quot;/message-board-sections/{messageBoardSectionId}/permissions&quot;,&quot;/sites/{siteId}/blog-postings/unsubscribe&quot;,&quot;/sites/{siteId}/structured-content-folders/batch&quot;,&quot;/message-board-attachments/{messageBoardAttachmentId}&quot;,&quot;/wiki-nodes/{wikiNodeId}/permissions&quot;,&quot;/wiki-pages/{wikiPageId}/subscribe&quot;,&quot;/asset-libraries/{assetLibraryId}/structured-contents/batch&quot;,&quot;/wiki-pages/{wikiPageId}/wiki-page-attachments&quot;,&quot;/structured-contents/{structuredContentId}/comments&quot;,&quot;/document-folders/{documentFolderId}&quot;,&quot;/knowledge-base-articles/{knowledgeBaseArticleId}/my-rating&quot;,&quot;/wiki-pages/batch&quot;,&quot;/wiki-nodes/{wikiNodeId}/subscribe&quot;,&quot;/sites/{siteId}/structured-contents/batch&quot;,&quot;/sites/{siteId}/wiki-nodes/by-external-reference-code/{externalReferenceCode}&quot;,&quot;/sites/{siteId}/message-board-threads&quot;,&quot;/message-board-messages/{messageBoardMessageId}/message-board-attachments&quot;,&quot;/sites/{siteId}/navigation-menus&quot;,&quot;/blog-postings/batch&quot;,&quot;/knowledge-base-articles/{knowledgeBaseArticleId}/knowledge-base-attachments/batch&quot;,&quot;/sites/{siteId}/structured-content-folders&quot;,&quot;/message-board-sections/{messageBoardSectionId}&quot;,&quot;/sites/{siteId}/navigation-menus/permissions&quot;,&quot;/sites/{siteId}/message-board-sections/permissions&quot;,&quot;/comments/{commentId}&quot;,&quot;/message-board-messages/{messageBoardMessageId}/unsubscribe&quot;,&quot;/sites/{siteId}/content-structures/permissions&quot;,&quot;/message-board-sections/{parentMessageBoardSectionId}/message-board-sections&quot;,&quot;/blog-posting-images/batch&quot;,&quot;/sites/{siteId}/blog-postings/subscribe&quot;,&quot;/document-folders/{parentDocumentFolderId}/document-folders&quot;,&quot;/knowledge-base-attachments/{knowledgeBaseAttachmentId}&quot;,&quot;/message-board-threads/{messageBoardThreadId}/permissions&quot;,&quot;/wiki-pages/{wikiPageId}/permissions&quot;]},&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;endpoint&quot;,&quot;tags&quot;:null},&quot;entitySchemaProperties&quot;:{&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;Runtime\&quot;,\&quot;fields\&quot;:[{\&quot;name\&quot;:\&quot;actions\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;aggregateRating_bestRating\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_ratingAverage\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_ratingCount\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_ratingValue\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_worstRating\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_x_class_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;assetLibraryKey\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;availableLanguages\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;contentFields\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;contentStructureId\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;],\&quot;talend.isLocked\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;creator_additionalName\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_contentType\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_familyName\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_givenName\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_id\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_image\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_profileURL\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_x_class_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;customFields\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;dateCreated\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;logicalType\&quot;:\&quot;timestamp-millis\&quot;},\&quot;null\&quot;],\&quot;talend.field.pattern\&quot;:\&quot;yyyy-MM-dd'T'hh:mm:ss'Z'\&quot;},{\&quot;name\&quot;:\&quot;dateModified\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;logicalType\&quot;:\&quot;timestamp-millis\&quot;},\&quot;null\&quot;],\&quot;talend.field.pattern\&quot;:\&quot;yyyy-MM-dd'T'hh:mm:ss'Z'\&quot;},{\&quot;name\&quot;:\&quot;datePublished\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;logicalType\&quot;:\&quot;timestamp-millis\&quot;},\&quot;null\&quot;],\&quot;talend.field.pattern\&quot;:\&quot;yyyy-MM-dd'T'hh:mm:ss'Z'\&quot;},{\&quot;name\&quot;:\&quot;description\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;description_i18n\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;externalReferenceCode\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;friendlyUrlPath\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;friendlyUrlPath_i18n\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;id\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;key\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;keywords\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;numberOfComments\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;relatedContents\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;renderedContents\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;siteId\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;subscribed\&quot;,\&quot;type\&quot;:[\&quot;boolean\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;taxonomyCategoryBriefs\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;taxonomyCategoryIds\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;title\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.isLocked\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;title_i18n\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;uuid\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;viewableBy\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;x_class_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]}]}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;entitySchemaProperties&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;inboundSchemaProperties&quot;:{&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;Runtime\&quot;,\&quot;fields\&quot;:[{\&quot;name\&quot;:\&quot;actions\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;aggregateRating_bestRating\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_ratingAverage\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_ratingCount\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_ratingValue\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_worstRating\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_x_class_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;assetLibraryKey\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;availableLanguages\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;contentFields\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;contentStructureId\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;],\&quot;talend.isLocked\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;creator_additionalName\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_contentType\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_familyName\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_givenName\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_id\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_image\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_profileURL\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_x_class_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;customFields\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;dateCreated\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;logicalType\&quot;:\&quot;timestamp-millis\&quot;},\&quot;null\&quot;],\&quot;talend.field.pattern\&quot;:\&quot;yyyy-MM-dd'T'hh:mm:ss'Z'\&quot;},{\&quot;name\&quot;:\&quot;dateModified\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;logicalType\&quot;:\&quot;timestamp-millis\&quot;},\&quot;null\&quot;],\&quot;talend.field.pattern\&quot;:\&quot;yyyy-MM-dd'T'hh:mm:ss'Z'\&quot;},{\&quot;name\&quot;:\&quot;datePublished\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;logicalType\&quot;:\&quot;timestamp-millis\&quot;},\&quot;null\&quot;],\&quot;talend.field.pattern\&quot;:\&quot;yyyy-MM-dd'T'hh:mm:ss'Z'\&quot;},{\&quot;name\&quot;:\&quot;description\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;description_i18n\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;externalReferenceCode\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;friendlyUrlPath\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;friendlyUrlPath_i18n\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;id\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;key\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;keywords\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;numberOfComments\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;relatedContents\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;renderedContents\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;siteId\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;subscribed\&quot;,\&quot;type\&quot;:[\&quot;boolean\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;taxonomyCategoryBriefs\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;taxonomyCategoryIds\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;title\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.isLocked\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;title_i18n\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;uuid\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;viewableBy\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;x_class_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]}]}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;inboundSchemaProperties&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;openAPIModule&quot;:{&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;/headless-delivery/v1.0\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;openAPIModule&quot;,&quot;tags&quot;:null},&quot;operations&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;com.liferay.talend.properties.resource.Operation&quot;,&quot;_httpMethod&quot;:&quot;post&quot;,&quot;name&quot;:&quot;Insert&quot;},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;com.liferay.talend.properties.resource.Operation&quot;,&quot;_httpMethod&quot;:&quot;post&quot;,&quot;name&quot;:&quot;Insert&quot;}]},&quot;currentType&quot;:&quot;com.liferay.talend.properties.resource.Operation&quot;,&quot;name&quot;:&quot;operations&quot;,&quot;tags&quot;:null},&quot;outboundSchemaProperties&quot;:{&quot;@type&quot;:&quot;com.liferay.talend.properties.resource.LiferayResourceProperties$1&quot;,&quot;this$0&quot;:{&quot;@ref&quot;:2},&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;Runtime\&quot;,\&quot;fields\&quot;:[{\&quot;name\&quot;:\&quot;actions\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;aggregateRating_bestRating\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_ratingAverage\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_ratingCount\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_ratingValue\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_worstRating\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_x_class_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;assetLibraryKey\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;availableLanguages\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;contentFields\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;contentStructureId\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;],\&quot;talend.isLocked\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;creator_additionalName\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_contentType\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_familyName\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_givenName\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_id\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_image\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_profileURL\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_x_class_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;customFields\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;dateCreated\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;logicalType\&quot;:\&quot;timestamp-millis\&quot;},\&quot;null\&quot;],\&quot;talend.field.pattern\&quot;:\&quot;yyyy-MM-dd'T'hh:mm:ss'Z'\&quot;},{\&quot;name\&quot;:\&quot;dateModified\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;logicalType\&quot;:\&quot;timestamp-millis\&quot;},\&quot;null\&quot;],\&quot;talend.field.pattern\&quot;:\&quot;yyyy-MM-dd'T'hh:mm:ss'Z'\&quot;},{\&quot;name\&quot;:\&quot;datePublished\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;logicalType\&quot;:\&quot;timestamp-millis\&quot;},\&quot;null\&quot;],\&quot;talend.field.pattern\&quot;:\&quot;yyyy-MM-dd'T'hh:mm:ss'Z'\&quot;},{\&quot;name\&quot;:\&quot;description\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;description_i18n\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;externalReferenceCode\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;friendlyUrlPath\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;friendlyUrlPath_i18n\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;id\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;key\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;keywords\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;numberOfComments\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;relatedContents\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;renderedContents\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;siteId\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;subscribed\&quot;,\&quot;type\&quot;:[\&quot;boolean\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;taxonomyCategoryBriefs\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;taxonomyCategoryIds\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;title\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.isLocked\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;title_i18n\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;uuid\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;viewableBy\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;x_class_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]}]}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;outboundSchemaProperties&quot;,&quot;validationResult&quot;:{&quot;@id&quot;:1,&quot;status&quot;:{&quot;name&quot;:&quot;OK&quot;},&quot;message&quot;:null,&quot;number&quot;:0},&quot;tags&quot;:null},&quot;parameters&quot;:{&quot;parameterLocationColumn&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;path&quot;]},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;ADD_QUOTES&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String>&quot;,&quot;name&quot;:&quot;parameterLocationColumn&quot;,&quot;tags&quot;:null},&quot;parameterNameColumn&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;siteId*&quot;]},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;ADD_QUOTES&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String>&quot;,&quot;name&quot;:&quot;parameterNameColumn&quot;,&quot;tags&quot;:null},&quot;parameterValueColumn&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;context.SITE_KEY&quot;]},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;ADD_QUOTES&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String>&quot;,&quot;name&quot;:&quot;parameterValueColumn&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;parameters&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;rejectSchemaProperties&quot;:{&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;rejectOutput\&quot;,\&quot;fields\&quot;:[{\&quot;name\&quot;:\&quot;actions\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;aggregateRating_bestRating\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_ratingAverage\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_ratingCount\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_ratingValue\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_worstRating\&quot;,\&quot;type\&quot;:[\&quot;double\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;aggregateRating_x_class_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;assetLibraryKey\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;availableLanguages\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;contentFields\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;contentStructureId\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;],\&quot;talend.isLocked\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;creator_additionalName\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_contentType\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_familyName\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_givenName\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_id\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_image\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_profileURL\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;creator_x_class_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;customFields\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;dateCreated\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;logicalType\&quot;:\&quot;timestamp-millis\&quot;},\&quot;null\&quot;],\&quot;talend.field.pattern\&quot;:\&quot;yyyy-MM-dd'T'hh:mm:ss'Z'\&quot;},{\&quot;name\&quot;:\&quot;dateModified\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;logicalType\&quot;:\&quot;timestamp-millis\&quot;},\&quot;null\&quot;],\&quot;talend.field.pattern\&quot;:\&quot;yyyy-MM-dd'T'hh:mm:ss'Z'\&quot;},{\&quot;name\&quot;:\&quot;datePublished\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;logicalType\&quot;:\&quot;timestamp-millis\&quot;},\&quot;null\&quot;],\&quot;talend.field.pattern\&quot;:\&quot;yyyy-MM-dd'T'hh:mm:ss'Z'\&quot;},{\&quot;name\&quot;:\&quot;description\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;description_i18n\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;externalReferenceCode\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;friendlyUrlPath\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;friendlyUrlPath_i18n\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;id\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;key\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;keywords\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;numberOfComments\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;relatedContents\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;renderedContents\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;siteId\&quot;,\&quot;type\&quot;:[\&quot;long\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;subscribed\&quot;,\&quot;type\&quot;:[\&quot;boolean\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;taxonomyCategoryBriefs\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;taxonomyCategoryIds\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;complex: Array\&quot;},{\&quot;name\&quot;:\&quot;title\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.isLocked\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;title_i18n\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;oas.dictionary\&quot;:\&quot;true\&quot;,\&quot;di.table.comment\&quot;:\&quot;complex: Dictionary\&quot;},{\&quot;name\&quot;:\&quot;uuid\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;viewableBy\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;x_class_name\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;]},{\&quot;name\&quot;:\&quot;errorMessage\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;talend.field.length\&quot;:\&quot;255\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;errorCode\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;],\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;}]}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;rejectSchemaProperties&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;name&quot;:&quot;resource&quot;,&quot;validationResult&quot;:{&quot;@ref&quot;:1},&quot;tags&quot;:null},&quot;name&quot;:&quot;root&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null}"/>
+    <metadata connector="MAIN" name="MAIN">
+      <column comment="complex: Dictionary" key="false" length="-1" name="actions" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="actions"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_bestRating" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_bestRating"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_ratingAverage" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_ratingAverage"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_ratingCount" nullable="true" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_ratingCount"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_ratingValue" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_ratingValue"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_worstRating" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_worstRating"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_x_class_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_x_class_name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="assetLibraryKey" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="assetLibraryKey"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="availableLanguages" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="availableLanguages"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="contentFields" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="contentFields"/>
+      </column>
+      <column comment="" key="false" length="-1" name="contentStructureId" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="contentStructureId"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_additionalName" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_additionalName"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_contentType" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_contentType"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_familyName" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_familyName"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_givenName" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_givenName"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_id" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_image" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_image"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_profileURL" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_profileURL"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_x_class_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_x_class_name"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="customFields" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="customFields"/>
+      </column>
+      <column comment="" key="false" length="-1" name="dateCreated" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss'Z'&quot;" precision="-1" type="id_Date" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="dateCreated"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="dateModified" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss'Z'&quot;" precision="-1" type="id_Date" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="dateModified"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="datePublished" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss'Z'&quot;" precision="-1" type="id_Date" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="datePublished"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="description" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="description"/>
+      </column>
+      <column comment="complex: Dictionary" key="false" length="-1" name="description_i18n" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="description_i18n"/>
+      </column>
+      <column comment="" key="false" length="-1" name="externalReferenceCode" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="externalReferenceCode"/>
+      </column>
+      <column comment="" key="false" length="-1" name="friendlyUrlPath" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="friendlyUrlPath"/>
+      </column>
+      <column comment="complex: Dictionary" key="false" length="-1" name="friendlyUrlPath_i18n" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="friendlyUrlPath_i18n"/>
+      </column>
+      <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="key" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="key"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="keywords" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="keywords"/>
+      </column>
+      <column comment="" key="false" length="-1" name="numberOfComments" nullable="true" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="numberOfComments"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="relatedContents" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="relatedContents"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="renderedContents" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="renderedContents"/>
+      </column>
+      <column comment="" key="false" length="-1" name="siteId" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="siteId"/>
+      </column>
+      <column comment="" key="false" length="-1" name="subscribed" nullable="true" pattern="" precision="-1" type="id_Boolean" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="subscribed"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="taxonomyCategoryBriefs" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="taxonomyCategoryBriefs"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="taxonomyCategoryIds" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="taxonomyCategoryIds"/>
+      </column>
+      <column comment="" key="false" length="-1" name="title" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="title"/>
+      </column>
+      <column comment="complex: Dictionary" key="false" length="-1" name="title_i18n" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="title_i18n"/>
+      </column>
+      <column comment="" key="false" length="-1" name="uuid" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="uuid"/>
+      </column>
+      <column comment="" key="false" length="-1" name="viewableBy" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="viewableBy"/>
+      </column>
+      <column comment="" key="false" length="-1" name="x_class_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="x_class_name"/>
+      </column>
+    </metadata>
+    <metadata connector="FLOW" name="tLiferayOutput_1">
+      <column comment="complex: Dictionary" key="false" length="-1" name="actions" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="actions"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_bestRating" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_bestRating"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_ratingAverage" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_ratingAverage"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_ratingCount" nullable="true" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_ratingCount"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_ratingValue" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_ratingValue"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_worstRating" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_worstRating"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_x_class_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_x_class_name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="assetLibraryKey" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="assetLibraryKey"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="availableLanguages" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="availableLanguages"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="contentFields" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="contentFields"/>
+      </column>
+      <column comment="" key="false" length="-1" name="contentStructureId" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="contentStructureId"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_additionalName" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_additionalName"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_contentType" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_contentType"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_familyName" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_familyName"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_givenName" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_givenName"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_id" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_image" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_image"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_profileURL" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_profileURL"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_x_class_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_x_class_name"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="customFields" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="customFields"/>
+      </column>
+      <column comment="" key="false" length="-1" name="dateCreated" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss'Z'&quot;" precision="-1" type="id_Date" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="dateCreated"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="dateModified" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss'Z'&quot;" precision="-1" type="id_Date" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="dateModified"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="datePublished" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss'Z'&quot;" precision="-1" type="id_Date" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="datePublished"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="description" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="description"/>
+      </column>
+      <column comment="complex: Dictionary" key="false" length="-1" name="description_i18n" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="description_i18n"/>
+      </column>
+      <column comment="" key="false" length="-1" name="externalReferenceCode" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="externalReferenceCode"/>
+      </column>
+      <column comment="" key="false" length="-1" name="friendlyUrlPath" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="friendlyUrlPath"/>
+      </column>
+      <column comment="complex: Dictionary" key="false" length="-1" name="friendlyUrlPath_i18n" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="friendlyUrlPath_i18n"/>
+      </column>
+      <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="key" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="key"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="keywords" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="keywords"/>
+      </column>
+      <column comment="" key="false" length="-1" name="numberOfComments" nullable="true" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="numberOfComments"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="relatedContents" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="relatedContents"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="renderedContents" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="renderedContents"/>
+      </column>
+      <column comment="" key="false" length="-1" name="siteId" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="siteId"/>
+      </column>
+      <column comment="" key="false" length="-1" name="subscribed" nullable="true" pattern="" precision="-1" type="id_Boolean" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="subscribed"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="taxonomyCategoryBriefs" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="taxonomyCategoryBriefs"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="taxonomyCategoryIds" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="taxonomyCategoryIds"/>
+      </column>
+      <column comment="" key="false" length="-1" name="title" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="title"/>
+      </column>
+      <column comment="complex: Dictionary" key="false" length="-1" name="title_i18n" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="title_i18n"/>
+      </column>
+      <column comment="" key="false" length="-1" name="uuid" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="uuid"/>
+      </column>
+      <column comment="" key="false" length="-1" name="viewableBy" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="viewableBy"/>
+      </column>
+      <column comment="" key="false" length="-1" name="x_class_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="x_class_name"/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="complex: Dictionary" key="false" length="-1" name="actions" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="actions"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_bestRating" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_bestRating"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_ratingAverage" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_ratingAverage"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_ratingCount" nullable="true" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_ratingCount"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_ratingValue" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_ratingValue"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_worstRating" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_worstRating"/>
+      </column>
+      <column comment="" key="false" length="-1" name="aggregateRating_x_class_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="aggregateRating_x_class_name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="assetLibraryKey" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="assetLibraryKey"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="availableLanguages" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="availableLanguages"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="contentFields" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="contentFields"/>
+      </column>
+      <column comment="" key="false" length="-1" name="contentStructureId" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="contentStructureId"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_additionalName" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_additionalName"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_contentType" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_contentType"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_familyName" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_familyName"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_givenName" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_givenName"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_id" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_image" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_image"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_name"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_profileURL" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_profileURL"/>
+      </column>
+      <column comment="" key="false" length="-1" name="creator_x_class_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="creator_x_class_name"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="customFields" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="customFields"/>
+      </column>
+      <column comment="" key="false" length="-1" name="dateCreated" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss'Z'&quot;" precision="-1" type="id_Date" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="dateCreated"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="dateModified" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss'Z'&quot;" precision="-1" type="id_Date" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="dateModified"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="datePublished" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss'Z'&quot;" precision="-1" type="id_Date" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="datePublished"/>
+        <additionalField key="di.date.timestamp" value="true"/>
+        <additionalField key="di.column.logicalType" value="timestamp-millis"/>
+      </column>
+      <column comment="" key="false" length="-1" name="description" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="description"/>
+      </column>
+      <column comment="complex: Dictionary" key="false" length="-1" name="description_i18n" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="description_i18n"/>
+      </column>
+      <column comment="" key="false" length="-1" name="externalReferenceCode" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="externalReferenceCode"/>
+      </column>
+      <column comment="" key="false" length="-1" name="friendlyUrlPath" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="friendlyUrlPath"/>
+      </column>
+      <column comment="complex: Dictionary" key="false" length="-1" name="friendlyUrlPath_i18n" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="friendlyUrlPath_i18n"/>
+      </column>
+      <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="key" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="key"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="keywords" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="keywords"/>
+      </column>
+      <column comment="" key="false" length="-1" name="numberOfComments" nullable="true" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="numberOfComments"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="relatedContents" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="relatedContents"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="renderedContents" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="renderedContents"/>
+      </column>
+      <column comment="" key="false" length="-1" name="siteId" nullable="true" pattern="" precision="-1" type="id_Long" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="siteId"/>
+      </column>
+      <column comment="" key="false" length="-1" name="subscribed" nullable="true" pattern="" precision="-1" type="id_Boolean" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="subscribed"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="taxonomyCategoryBriefs" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="taxonomyCategoryBriefs"/>
+      </column>
+      <column comment="complex: Array" key="false" length="-1" name="taxonomyCategoryIds" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="taxonomyCategoryIds"/>
+      </column>
+      <column comment="" key="false" length="-1" name="title" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="title"/>
+      </column>
+      <column comment="complex: Dictionary" key="false" length="-1" name="title_i18n" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="title_i18n"/>
+      </column>
+      <column comment="" key="false" length="-1" name="uuid" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="uuid"/>
+      </column>
+      <column comment="" key="false" length="-1" name="viewableBy" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="viewableBy"/>
+      </column>
+      <column comment="" key="false" length="-1" name="x_class_name" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="x_class_name"/>
+      </column>
+      <column comment="" key="false" length="255" name="errorMessage" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="errorMessage"/>
+      </column>
+      <column comment="" key="false" length="-1" name="errorCode" nullable="true" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="errorCode"/>
+      </column>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="structuredContentFormat" lineStyle="0" metaname="structuredContentFormat" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLiferayOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="structuredContentFormat" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
