@@ -72,3 +72,5 @@ Then we will create the job to synchronize the database data with Liferay. You w
 10. Now you can see your articles in Liferay
 
 ![See your articles](resources/images/talend-step-10.png)
+
+_**Info** In case you have problems following the demo you can import the project using the Import existing project option in Talend and selecting the [LIFERAY_VISION_PROJECT](talend/LIFERAY_VISION_PROJECT) folder_
