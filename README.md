@@ -2,7 +2,7 @@
 
 On this repo you will find the resources used in the demo shown in the **Liferay Vision 2021** talk with the same name.
 
-The demo purpose is to show how you can easily use **Liferay** and ETL tools to integrate with other systems o use external data sources.
+The demo purpose is to show how you can easily use **Liferay** and ETL tools to integrate with other systems or use external data sources.
 
 ## Prerequisites
 
